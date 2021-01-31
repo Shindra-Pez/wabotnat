@@ -37,7 +37,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'ORG: Pengembang XBot;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=6282334297175:+62 823-3429-7175\n' 
             + 'END:VCARD' 
-prefix = '!'
+prefix = '/'
 blocked = []   
 limitawal = 30
 memberlimit = 256
@@ -506,7 +506,7 @@ client.on('group-participants-update', async (anu) => {
                 addKoinUser(tujuantf, hasiltf)
                 confirmATM(sender, jumblah)
                 addKoinUser('62895710073737@s.whatsapp.net', fee)
-                reply(`*「 Exito 」*\n\La transferencia ha sido exitoso!\ndari : +${sender.split("@")[0]}\nke : +${tujuan}\nSaltar Transferencia : ${jumblah}\nImpuesto : ${fee}`)
+                reply(`*「 Exito 」*\n\La transferencia ha sido exitosa!\ndari : +${sender.split("@")[0]}\nke : +${tujuan}\nSaltar Transferencia : ${jumblah}\nImpuesto : ${fee}`)
                 break
 				case 'dompet':
 				if (!isRegistered) return reply(ind.noregis())
