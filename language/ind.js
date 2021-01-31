@@ -35,39 +35,39 @@ exports.stikga = () => {
 }
 
 exports.linkga = () => {
-	return`*maaf link tidak valid*`
+	return`*El enlace no es valido.*`
 }
 
 exports.groupo = () => {
-	return`*「GROUP ONLY」*`
+	return`*「SOLO UTILIZABLE EN GRUPOS」*`
 }
 
 exports.ownerb = () => {
-	return`*「OWNER BOT ONLY」*`
+	return`*「SOLO UTILIZABLE POR EL DUEÑO DEL BOT」*`
 }
 
 exports.ownerg = () => {
-	return`*「OWNER GROUP ONLY」*`
+	return`*「SOLO UTILIZABLE POR EL DUEÑO DEL GRUPO」
 }
 
 exports.admin = () => {
-	return`*「ADMIN GROUP ONLY」*`
+	return`*「SOLO UTILIZABLE POR ADMINS」
 }
 
 exports.badmin = () => {
-	return`*「BOT HARUS JADI ADMIN」*`
+	return`*「EL BOT NECESITA PERMISOS DE ADMINISTRADOR」
 }
 
 exports.nsfwoff = () => {
-	return`*NSFW GAK AKTIF*`
+	return`*El NSFW no esta activo.
 }
 
 exports.bug = () => {
-	return`*Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi*`
+	return`*Se han informado problemas al propietario del BOT, no se responderá a los informes falsos*`
 }
 
 exports.wrongf = () => {
-	return`*format salah/text kosong*`
+	return`*Formato invalido/Texto en blanco
 }
 
 exports.clears = () => {
@@ -75,7 +75,7 @@ exports.clears = () => {
 }
 
 exports.pc = () => {
-	return`*「 REGISTRASI 」*\n\nuntuk mengetahui apa kamu sudah terdaftar silahkah check message yang saya kirim \n\nNOTE:\n*jika kamu belum mendapatkan pesan. berarti kamu belum menyimpan nomer bot*`
+	return`*「 REGISTRO」*\n\ParOTE:\n*jika kamu belum mendapatkan pesan. berarti kamu belum menyimpan nomer bot*`
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
