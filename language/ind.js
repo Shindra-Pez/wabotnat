@@ -1,9 +1,9 @@
 exports.wait = () => {
-	return`*「 WAIT 」 SEDANG PROSES*`
+	return`*「 ESPERA 」 Procesando...*`
 }
 
 exports.succes = () => {
-	return`*「 SUCCES 」*`
+	return`*「 EXITO! 」*`
 }
 
 exports.lvlon = () => {
@@ -15,23 +15,23 @@ exports.lvloff = () => {
 }
 
 exports.lvlnul = () => {
-	return`*LEVELMU MASIH KOSONG*`
+	return`*Su nivel esta nulo.*`
 }
 
 exports.lvlnoon = () => {
-	return`*LEVEL DI GRUB BELUM DI AKTIFKAN*`
+	return`*LA FUNCION DE NIVELES NO HA SIDO ACTIVADA*`
 }
 
 exports.noregis = () => {
-	return`*「 BELUM DAFTAR 」*\n\n*cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar affis|17*`
+	return`*「 NO REGISTRADO 」*\n\n*Como registrarse: ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar affis|17*`
 }
 
 exports.rediregis = () => {
-	return`*「 SUDAH DAFTAR 」*\n\n*kamu sudah terdaftar di database bot*`
+	return`*「 REGISTRO EXITOSO! 」*\n\n*Ya estas registrado en la base de datos!*`
 }
 
 exports.stikga = () => {
-	return`*yah gagal coba ulangi beberapa saat lagi*`
+	return`*Fallido, intenta mas tarde...*`
 }
 
 exports.linkga = () => {
