@@ -4,22 +4,22 @@
 <a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/MAINTENED-YES-blue.svg"</a>
 </p>
 
-## Clone this project
+## Clona este projecto
 
 ```bash
 > git clone https://github.com/affisjunianto/botwasapv4
 ```
 
-## Install the dependencies:
-Before running the below command, make sure you're in the project directory that
-you've just cloned!!
+## Instala las Dependencias:
+Antes de ejecutar el siguiente comando, asegúrese de estar en el directorio del proyecto que
+acabas de clonar!!
 
 ```bash
 > cd botwasapv4
 > bash install.sh
 ```
 
-### Usage
+### Como iniciar el script:
 ```bash
 > node index.js
 ```
