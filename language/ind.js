@@ -23,7 +23,7 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「 NO REGISTRADO 」*\n\n*Como registrarse: ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar affis|17*`
+	return`*「 NO REGISTRADO 」*\n\n*Como registrarse: ${prefix}daftar (username)|(edad)*`
 }
 
 exports.rediregis = () => {
@@ -47,19 +47,19 @@ exports.ownerb = () => {
 }
 
 exports.ownerg = () => {
-	return`*「SOLO UTILIZABLE POR EL DUEÑO DEL GRUPO」
+	return`*「SOLO UTILIZABLE POR EL DUEÑO DEL GRUPO」`
 }
 
 exports.admin = () => {
-	return`*「SOLO UTILIZABLE POR ADMINS」
+	return`*「SOLO UTILIZABLE POR ADMINS」`
 }
 
 exports.badmin = () => {
-	return`*「EL BOT NECESITA PERMISOS DE ADMINISTRADOR」
+	return`*「EL BOT NECESITA PERMISOS DE ADMINISTRADOR」`
 }
 
 exports.nsfwoff = () => {
-	return`*El NSFW no esta activo.
+	return`*El NSFW no esta activo.``
 }
 
 exports.bug = () => {
@@ -67,7 +67,7 @@ exports.bug = () => {
 }
 
 exports.wrongf = () => {
-	return`*Formato invalido/Texto en blanco
+	return`*Formato invalido/Texto en blanco*`
 }
 
 exports.clears = () => {
