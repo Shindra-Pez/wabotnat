@@ -1510,7 +1510,7 @@ client.on('group-participants-update', async (anu) => {
 					if (!isGroup) return reply(ind.groupo())
 					if (!isGroupAdmins) return reply(ind.admin())
 					if (!isBotGroupAdmins) return reply(ind.badmin())
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Taguea al Miembro al que quieras darle Admin
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Taguea al Miembro al que quieras darle Admin')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
 						teks = ''
