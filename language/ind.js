@@ -1,73 +1,73 @@
 exports.wait = () => {
-	return`*「 ESPERA 」 Procesando...*`
+	return`*「 WAIT 」 Procesando...*`
 }
 
 exports.succes = () => {
-	return`*「 EXITO! 」*`
+	return`*「 EXITO 」*`
 }
 
 exports.lvlon = () => {
-	return`*「 ENABLE 」 LEVELING*`
+	return`*「 HABILITADO 」 LEVELING*`
 }
 
 exports.lvloff = () => {
-	return`*「 DISABLE 」 LEVELING*`
+	return`*「 DESHABILITADO 」 LEVELING*`
 }
 
 exports.lvlnul = () => {
-	return`*Su nivel esta nulo.*`
+	return`*Tu nivel esta vacio. (jodete traductor de google.)*`
 }
 
 exports.lvlnoon = () => {
-	return`*LA FUNCION DE NIVELES NO HA SIDO ACTIVADA*`
+	return`*Los niveles no se han activado en este grupo.*`
 }
 
 exports.noregis = () => {
-	return`*「 NO REGISTRADO 」*\n\n*Como registrarse: ${prefix}daftar (username)|(edad)*`
+	return`*「 NO REGISTRADO 」*\n\n*Como registrarse: ${prefix}daftar name|edad* \n* Ejemplo: ${prefix}daftar affis|17*`
 }
 
 exports.rediregis = () => {
-	return`*「 REGISTRO EXITOSO! 」*\n\n*Ya estas registrado en la base de datos!*`
+	return`*「 YA REGISTRADO 」*\n\n*Ya estas registrado en la base de datos del bot.*`
 }
 
 exports.stikga = () => {
-	return`*Fallido, intenta mas tarde...*`
+	return`*Fallido, intenta mas tarde.*`
 }
 
 exports.linkga = () => {
-	return`*El enlace no es valido.*`
+	return`*Enlace invalido.*`
 }
 
 exports.groupo = () => {
-	return`*「SOLO UTILIZABLE EN GRUPOS」*`
+	return`*「GROUP ONLY」*`
 }
 
 exports.ownerb = () => {
-	return`*「SOLO UTILIZABLE POR EL DUEÑO DEL BOT」*`
+	return`*「OWNER BOT ONLY」*`
 }
 
 exports.ownerg = () => {
-	return`*「SOLO UTILIZABLE POR EL DUEÑO DEL GRUPO」`
+	return`*「OWNER GROUP ONLY」*`
 }
 
 exports.admin = () => {
-	return`*「SOLO UTILIZABLE POR ADMINS」`
+	return`*「ADMIN GROUP ONLY」*`
 }
 
 exports.badmin = () => {
-	return`*「EL BOT NECESITA PERMISOS DE ADMINISTRADOR」`
+	return`*El Bot necesita ser Admin.*`
 }
 
 exports.nsfwoff = () => {
-	return`*El NSFW no esta activo.``
+	return`*Las funciones NSFW estan deshabilitadas.*`
 }
 
 exports.bug = () => {
-	return`*Se han informado problemas al propietario del BOT, no se responderá a los informes falsos*`
+	return`*Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi*`
 }
 
 exports.wrongf = () => {
-	return`*Formato invalido/Texto en blanco*`
+	return`*Formato incorrecto/Texto en blanco/Demasiado largo*`
 }
 
 exports.clears = () => {
@@ -75,124 +75,125 @@ exports.clears = () => {
 }
 
 exports.pc = () => {
-	return`*「 REGISTRO」*\n\Para saber si se ha registrado, consulte el mensaje que le envie \n\nNOTE:\n*Si no recibe el mensaje, significa que su numero no se ha guardado en el Bot.*`
+	return`*「 REGISTRASI 」*\n\nuntuk mengetahui apa kamu sudah terdaftar silahkah check message yang saya kirim \n\nNOTE:\n*jika kamu belum mendapatkan pesan. berarti kamu belum menyimpan nomer bot*`
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
-	return`*「 DATOS REGISTRADOS 」*\n\nTe haz registrado  con los siguientes datos: \n\n┏━⊱Nombre\n┗⊱${namaUser}\n┏━⊱Numero\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱Edad\n┗⊱${umurUser}\n┏━⊱Fecha de registro\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}\n┗⊱NOTE : No olvides tu numero por que es importante:v`
+	return`*「 Datos del Usuario 」*\n\nTe has registrado con estos datos: \n\n┏━⊱Nombre\n┗⊱${namaUser}\n┏━⊱Numero⊱wa.me/${sender.split("@")[0]}\n┏━⊱Edad\n┗⊱${umurUser}\n┏━⊱Fecha de Registro\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}`
 }
 
 exports.cmdnf = (prefix, command) => {
-	return`command *${prefix}${command}* No encontrado, intente escribir *${prefix}menu*`
+	return`Comando *${prefix}${command}* no encontrado, intenta escribir *${prefix}menu*`
 }
 
 exports.owneresce = (pushname) => {
-	return`*Lo siento ${pushname} pero no eres el propietario del Bot*`
+	return`*Lo siento pero ${pushname} no es el dueño del script.*`
 }
 
 exports.reglevelaha = (command, pushname, getLevelingLevel, sender, aha) => {
-	return`*Lo siento ${pushname} pero tu nivel no es suficiente*\n\n*┏⊱Tu nivel : ${getLevelingLevel(sender)}*\n*┣⊱Tipo de comando : ${command}*\n*┗⊱Requisitos de nivel : ${aha}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*Lo siento ${pushname} pero tu nivel no es suficiente*\n\n*┏⊱Tu nivel : ${getLevelingLevel(sender)}*\n*┣⊱Comando : ${command}*\n*┗⊱Nivel requerido : ${aha}*`
 }
 
 exports.reglevelahb = (command, pushname, getLevelingLevel, sender, ahb) => {
-	return`*Lo siento ${pushname} pero tu nivel no es suficiente*\n\n*┏⊱Tu nivel : ${getLevelingLevel(sender)}*\n*┣⊱Tipo de comando : ${command}*\n*┗⊱Requisitos de nivel : ${ahb}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahb}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
 exports.reglevelahc = (command, pushname, getLevelingLevel, sender, ahc) => {
-	return`*Lo siento ${pushname} pero tu nivel no es suficiente*\n\n*┏⊱Tu nivel : ${getLevelingLevel(sender)}*\n*┣⊱Tipo de comando : ${command}*\n*┗⊱Requisitos de nivel : ${ahc}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahc}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
 exports.reglevelahd = (command, pushname, getLevelingLevel, sender, ahd) => {
-	return`*Lo siento ${pushname} pero tu nivel no es suficiente*\n\n*┏⊱Tu nivel : ${getLevelingLevel(sender)}*\n*┣⊱Tipo de comando : ${command}*\n*┗⊱Requisitos de nivel : ${ahd}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahd}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
 exports.reglevelahe = (command, pushname, getLevelingLevel, sender, ahe) => {
-	return`*Lo siento ${pushname} pero tu nivel no es suficiente*\n\n*┏⊱Tu nivel : ${getLevelingLevel(sender)}*\n*┣⊱Tipo de comando: ${command}*\n*┗⊱Requisitos de nivel : ${ahe}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahe}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
 exports.reglevelahf = (command, pushname, getLevelingLevel, sender, ahf) => {
-	return`*Lo siento ${pushname} pero tu nivel no es suficiente*\n\n*┏⊱Tu nivel : ${getLevelingLevel(sender)}*\n*┣⊱Tipo de comando : ${command}*\n*┗⊱Requisitos de nivel : ${ahf}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahf}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
-exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku) => { 
+exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku, role) => { 
 	return `
-┏━━━⊱  *SOBRE EL USUARIO*  ⊰━━┓
+┏━━━⊱  *Sobre el Usuario*  ⊰━━┓
 ┣⊱ *Nombre* : ${pushname}
 ┣⊱ *Numero* : wa.me/${sender.split("@")[0]}
-┣⊱ *Dinero restante* : Rp${uangku}
-┣⊱ *XP* : ${getLevelingXp(sender)}/${reqXp}
+┣⊱ *Dinero* : Rp${uangku}
+┣⊱ *XP* : ${getLevelingXp(sender)}/${reqXp} 
 ┣⊱ *Nivel* : ${getLevelingLevel(sender)}
-┣⊱ *Fecha de registro* : ${_registered.length}
+┣⊱ *User register* : ${_registered.length}
 ┗━━━⊱  ⸨ *AFFIS* ⸩  ⊰━━━━┛
 
+ *${prefix}info*
+ *${prefix}donasi*
+ *${prefix}owner*
 
 ┏━━⊱ *MAKER MENU* ⊰━━┓
-┣⊱ *${prefix}sticker*
-┣⊱ *${prefix}avengers*
-┣⊱ *${prefix}summer*
-┣⊱ *${prefix}sandwrite*
-┣⊱ *${prefix}metaldark*
-┣⊱ *${prefix}dropwater*
-┣⊱ *${prefix}greenneon*
-┣⊱ *${prefix}neontext*
-┣⊱ *${prefix}sumery*
-┣⊱ *${prefix}blood*
-┣⊱ *${prefix}firework*
-┣⊱ *${prefix}lava*
-┣⊱ *${prefix}qrcode*
+┣⊱ *${prefix}sticker* 
+┣⊱ *${prefix}quotemaker* <text|author>
+┣⊱ *${prefix}qrcode* <text>
+┣⊱ *${prefix}ttp*
+┣⊱ *${prefix}stickerhide* <text>
+┣⊱ *${prefix}emoji*
 ┣━━⊱  *FUN MENU*  ⊰━━━┫
-┣⊱ *${prefix}mining*
-┣⊱ *${prefix}bisakah*
-┣⊱ *${prefix}kapankah*
-┣⊱ *${prefix}apakah*
-┣⊱ *${prefix}rate*
+┣⊱ *${prefix}lirik* <text>
+┣⊱ *${prefix}artinama>
+┣⊱ *${prefix}chord* <text>
+┣⊱ *${prefix}bisakah* <teks>
+┣⊱ *${prefix}kapankah* <teks>
+┣⊱ *${prefix}apakah* <teks>
+┣⊱ *${prefix}rate* <teks>
 ┣⊱ *${prefix}slap*
 ┣⊱ *${prefix}tampar*
-┣⊱ *${prefix}moddroid*
-┣⊱ *${prefix}happymod*
-┣⊱ *${prefix}nangis*
-┣⊱ *${prefix}cium*
-┣⊱ *${prefix}peluk*
+┣⊱ *${prefix}moddroid* <teks>
+┣⊱ *${prefix}happymod* <teks>
 ┣━━⊱ *MUTUAL* ⊰━━━━━┫
 ┣⊱ *${prefix}mutual*
 ┣⊱ *${prefix}next*
 ┣━━⊱ *MEDIA MENU* ⊰━━┫
-┣⊱ *${prefix}quotes*
-┣⊱ *${prefix}beritahoax*
-┣⊱ *${prefix}brainly*
+┣⊱ *${prefix}brainly* [error]
 ┣⊱ *${prefix}pinterest*
-┣⊱ *${prefix}resepmasakan*
-┣⊱ *${prefix}igstalk*
-┣⊱ *${prefix}bitly*
+┣⊱ *${prefix}resepmasakan* <teks>
+┣⊱ *${prefix}igstalk* <username>
+┣⊱ *${prefix}bitly* <link>
+┣⊱ *${prefix}tiktok* <username>
+┣⊱ *${prefix}ssweb* <link>
+┣⊱ *${prefix}kbbi* <text>
 ┣━━⊱ *YT & SONG* ⊰━━━┫
-┣⊱ *${prefix}ytmp3*
-┣⊱ *${prefix}ytmp4*
-┣⊱ *${prefix}joox*
+┣⊱ *${prefix}ytmp3* <link>
+┣⊱ *${prefix}ytmp4* <link>
+┣⊱ *${prefix}joox* <judul>
 ┣━━⊱  *NSFW MENU*  ⊰━┫
-┣⊱ *${prefix}pokemon*
 ┣⊱ *${prefix}anjing*
 ┣⊱ *${prefix}blowjob*
 ┣⊱ *${prefix}nekonime*
+┣⊱ *${prefix}pokemon*
 ┣⊱ *${prefix}husbu*
+┣⊱ *${prefix}nangis*
+┣⊱ *${prefix}cium*
+┣⊱ *${prefix}peluk*
 ┣⊱ *${prefix}ranime*
 ┣━━⊱ *LIMIT & UANG* ⊰━┫
-┣⊱ *${prefix}limit*
-┣⊱ *${prefix}buylimit*
-┣⊱ *${prefix}transfer*
+┣⊱ *${prefix}limit* 
+┣⊱ *${prefix}buylimit* <jumblah>
+┣⊱ *${prefix}transfer* <tag |jumblah>
 ┣⊱ *${prefix}dompet*
+┣⊱ *${prefix}leaderboard*
 ┣━━⊱ *GROUP MENU* ⊰━┫
 ┣⊱ *${prefix}hidetag*
+┣⊱ *${prefix}blocklist*
 ┣⊱ *${prefix}grouplist*
 ┣⊱ *${prefix}level*
 ┣⊱ *${prefix}linkgc*
 ┣⊱ *${prefix}tagall*
 ┣⊱ *${prefix}setpp*
-┣⊱ *${prefix}add*
-┣⊱ *${prefix}kick*
-┣⊱ *${prefix}setname*
-┣⊱ *${prefix}setdesc*
-┣⊱ *${prefix}demote*
-┣⊱ *${prefix}promote*
+┣⊱ *${prefix}add* <tag>
+┣⊱ *${prefix}kick* <tag>
+┣⊱ *${prefix}setname* <teks>
+┣⊱ *${prefix}setdesc* <teks>
+┣⊱ *${prefix}demote* <tag>
+┣⊱ *${prefix}promote* <tag>
 ┣⊱ *${prefix}listadmin*
 ┣⊱ *${prefix}group* [buka/tutup]
 ┣⊱ *${prefix}leveling* [enable/disable]
@@ -200,59 +201,58 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}simih* [1/0]
 ┣⊱ *${prefix}welcome* [1/0]
 ┣━━⊱ *OWNER MENU* ⊰━┫
-┣⊱ *${prefix}bc*
-┣⊱ *${prefix}bcgc*
-┣⊱ *${prefix}kickall*
-┣⊱ *${prefix}setreply*
-┣⊱ *${prefix}setprefix*
+┣⊱ *${prefix}bc* <teks>
+┣⊱ *${prefix}bcgc* <teks>
+┣⊱ *${prefix}kickall* <rawan ban>
+┣⊱ *${prefix}setreply* <teks>
+┣⊱ *${prefix}setprefix* <symbol>
 ┣⊱ *${prefix}clearall*
-┣⊱ *${prefix}block*
-┣⊱ *${prefix}unblock*
+┣⊱ *${prefix}block* <tag>
+┣⊱ *${prefix}unblock* <tag>
 ┣⊱ *${prefix}leave*
 ┣⊱ *${prefix}event* [1/0]
-┣⊱ *${prefix}clone*
+┣⊱ *${prefix}clone* <tag>
 ┣⊱ *${prefix}setppbot*
-┣━━⊱ *THANGKS TO* ⊰━┫
+┣━━⊱ *THANGKS TO* ⊰━━┫
 ┃
-┣⊱ *AFFIS JUNIANTO*
-┣⊱ *FADHIL GRAPHY*
-┣⊱ *MHANKBARBARS*
-┣⊱ *MYBOT TEAM*
-┣⊱ *AGUNG(XPTN)*
-┣⊱ *BRYAN(SUHU)*
-┣⊱ *TOBZ*
-┣⊱ *ARUGAZ*
+┣⊱ *AFFIS JUNIANTO* <dev>
+┣⊱ *FADHIL GRAPHY* <partner>
+┣⊱ *MHANKBARBARS* <sc ori>
+┣⊱ *MYBOT TEAM* <team>
 ┃
-┗━━⊱  ⸨ *AFFIS* ⸩  ⊰━━━┛
+┣⊱ NOTE : TQTO DI HAPUS
+┃ GW GAK UP LAGI OKE
+┃
+┗━━⊱  ⸨ *X-BOT* ⸩  ⊰━━━━┛
 `
 }
 
-exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel) => {
+exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel, role) => {
 	return`
-*「 SUBISTE DE NIVEL! 」*
+*「 Felicidades 」*
 ┏⊱ *Nombre* : ${pushname}
 ┣⊱ *Numero* : wa.me/${sender.split("@")[0]}
-┣⊱ *Xp* : ${getLevelingXp(sender)}
-┣⊱ *Limite* = +3
+┣⊱ *XP* : ${getLevelingXp(sender)}
+┣⊱ *Limite* : +3
 ┗⊱ *Nivel* : ${getLevel} ⊱ ${getLevelingLevel(sender)}
 `}
  
 exports.limitend = (pushname) => {
-	return`*Lo sentimos ${pushname} el limite de hoy expirara*\n*El limite de reinicia cada 24 horas*`
+	return`*maaf ${pushname} limit hari ini habis*\n*beli limit untuk mendapatkan limit/ naik level*`
 }
 
 exports.limitcount = (limitCounts) => {
 	return`
-*「 CONTEO LIMITE 」*
-Limite restante : ${limitCounts}
+*「 LIMIT COUNT 」*
+sisa limit anda : ${limitCounts}
 
-NOTE : Para obtener un limite, puedes subir de nivel o comprarlo`
+NOTE : untuk mendapatkan limit. bisa lewat naik level atau buylimit`
 }
 
 exports.satukos = () => {
-	return`*Agregue un parametro 1/Habilitar 0/Desactivar`
+	return`*Añade un parametro: 1/Habilitar o 0/Deshabilitar`
 }
 
 exports.uangkau = (pushname, sender, uangkau) => {
-	return`*┏⊱ 「 ATM 」⊰━┓*\n┣⊱ *Nombre* : ${pushname}\n┣⊱ *Numero* : ${sender.split("@")[0]}\n┣⊱ *Dinero* : ${uangkau}\n┗━━━━━━━━━━`
+	return`*┏⊱ 「 ATM 」⊰━┓*\n┣⊱ *Nama* : ${pushname}\n┣⊱ *Nomer* : ${sender.split("@")[0]}\n┣⊱ *Uang* : ${uangkau}\n┗━━━━━━━━━━`
 }
